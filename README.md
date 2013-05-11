@@ -4,9 +4,18 @@ JSON.stringify
 ## usage
 
     var blat = require('blat')
+    blat({foo: 'bar'})
+    // => '{\n  "foo": "bar"\n}'
 
-## api
+Yes, I hate the JSON.stringify api this much.
 
+# api
+
+# blat(Object) => String
+Serializes and pretty-prints a JavaScript object to a string
+
+## blat.peek(Object) => Object
+`console.log`s a `blat()`d view of the object and returns the original object.
 
 ## installation
 
